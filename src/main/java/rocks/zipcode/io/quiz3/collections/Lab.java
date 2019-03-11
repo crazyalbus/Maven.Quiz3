@@ -1,5 +1,7 @@
 package rocks.zipcode.io.quiz3.collections;
 
+import rocks.zipcode.io.quiz3.objectorientation.enums.LabStatus;
+
 import java.util.Set;
 
 /**

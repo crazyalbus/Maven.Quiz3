@@ -1,26 +1,51 @@
 package rocks.zipcode.io.quiz3.arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author leon on 09/12/2018.
  */
 public class WaveGenerator {
     public static String[] wave(String str) {
 
-        String[] wave = new String[str.length()];
-
-//        char[] temp = str.toCharArray();
-//        int count = 0;
+//        List<String> waveList = new ArrayList<>();
 //
-//        for (int i = 0; i < str.length(); i++) {
+//        char[] letters = str.toCharArray();
 //
-//            for (Character c : temp) {
-//                if(Character.isLetter(c))
-//            }
+//        int waveLetter = 0;
+//        int charCounted = 0;
+//
+//        while (charCounted < str.length()) {
+//            int lettersCounted = 0;
 //            StringBuilder temp = new StringBuilder();
+//            if(!Character.isLetter(letters[charCounted])) {
+//                charCounted++;
+//                System.out.println("skipped");
+//            } else {
+//                for (Character c : letters) {
+//                    if (Character.isLetter(c)) {
+//                        if (waveLetter == lettersCounted) {
+//                            temp.append(Character.toUpperCase(c));
+//                            lettersCounted++;
 //
+//                        } else {
+//                            temp.append(Character.toLowerCase(c));
+//                            lettersCounted++;
+//                        }
+//                    } else {
+//                        temp.append(c);
+//                        lettersCounted++;
+//                    }
+//                }
+//                waveLetter++;
+//                charCounted++;
+//                waveList.add(temp.toString());
+//            }
 //        }
 
 
+        String[] wave = new String[str.length()];
 
 
         for (int i = 0; i < str.length(); i++) {

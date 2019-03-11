@@ -23,17 +23,21 @@ public class Student {
 
     public Lab getLab(String labName) {
 
-        Set<Lab> allLabs = map.keySet();
+//        Set<Lab> allLabs = map.keySet();
+//        Lab toReturn = null;
+//
+//        for (Lab lab : allLabs) {
+//            if(labName == lab.getName()) {
+//                toReturn = lab;
+//            }
+//        }
 
-        Lab lab =
-
-        return map.ke;
+        return null;
     }
 
     public void setLabStatus(String labName, LabStatus labStatus) {
-    map.replace(getLab(labName), labStatus);
+    map.put(getLab(labName), labStatus);
     }
-
 
     public void forkLab(Lab lab) {
     }
