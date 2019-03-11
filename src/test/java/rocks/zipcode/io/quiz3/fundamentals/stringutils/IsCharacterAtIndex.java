@@ -16,7 +16,7 @@ public class IsCharacterAtIndex {
         Integer index = 0;
 
         // then
-        Assert.assertTrue(StringUtils.isCharacterAtIndex(string, character, index));
+        Assert.assertFalse(StringUtils.isCharacterAtIndex(string, character, index));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class IsCharacterAtIndex {
         Integer index = 0;
 
         // then
-        Assert.assertFalse(StringUtils.isCharacterAtIndex(string, character, index));
+        Assert.assertTrue(StringUtils.isCharacterAtIndex(string, character, index));
     }
 
 

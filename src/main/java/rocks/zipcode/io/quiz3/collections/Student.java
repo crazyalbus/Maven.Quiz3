@@ -2,24 +2,36 @@ package rocks.zipcode.io.quiz3.collections;
 
 import rocks.zipcode.io.quiz3.objectorientation.enums.LabStatus;
 
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author leon on 10/12/2018.
  */
 public class Student {
+
+    Map<Lab, LabStatus> map;
+
     public Student() {
-        this(null);
+        this(new HashMap<Lab, LabStatus>());
     }
 
     public Student(Map<Lab, LabStatus> map) {
+        this.map = map;
     }
 
     public Lab getLab(String labName) {
-        return null;
+
+        Set<Lab> allLabs = map.keySet();
+
+        Lab lab =
+
+        return map.ke;
     }
 
     public void setLabStatus(String labName, LabStatus labStatus) {
+    map.replace(getLab(labName), labStatus);
     }
 
 
@@ -29,4 +41,5 @@ public class Student {
     public LabStatus getLabStatus(String labName) {
         throw new UnsupportedOperationException("Method not yet implemented");
     }
+
 }
